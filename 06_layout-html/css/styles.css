@@ -13,6 +13,15 @@ body {
   height: 154px;
 }
 
+.section-titles {
+  margin: 0 0 20px 40px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
 /* HEADER */
 
 /* .header {
@@ -37,6 +46,10 @@ body {
 .header-link {
   font-family: "Muller";
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .header-contacts-text {
@@ -105,37 +118,33 @@ body {
 
 /* MAIN */
 
-/* MAIN-SECTION-SPECIAL */
-
-.special {
-  height: 540px;
-}
-
 .main .container {
+  block-size: auto;
   margin-top: 70px;
 }
 
-.main-special-title {
-  margin: 0 0 20px 40px;
-  font-family: 'Muller';
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  color: #333333;
+/* MAIN-SECTION-SPECIAL */
+
+.special {
+  block-size: auto;
 }
 
 .main-special-offers {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px; /* Должно быть 24 */
+  margin-right: 24px;
   width: 573px;
-  height: 540px;
 }
 
 .main-special-offer {
   margin-bottom: 24px;
   padding: 40px 0 40px 45px;
+  width: 528px;
   border-radius: 15px;
+}
+
+.main-special-offer:last-child {
+  margin-bottom: 0;
 }
 
 .main-special-offer-text {
@@ -183,9 +192,8 @@ body {
 }
 
 .main-special-rooms {
-  box-sizing: border-box;
   display: inline-block;
-  width: 573px;
+  width: 528px;
 }
 
 .main-special-room {
@@ -213,5 +221,83 @@ body {
 
 .first-special-rooms-img {
   background-image: url("../img/special2.jpg");
-  background-size: contain;
+  background-size: cover;
 }
+
+/* MAIN-SECTION-ABOUT-US */
+
+.main-about-us-text {
+  width: 888px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* MAIN-SECTION-SERVICES */
+
+.main-services-offers {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.main-services-offer {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 165px 126px 35px 45px;
+  width: 402px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.main-services-offer:nth-child(even) {
+  margin-right: 0;
+}
+
+.first-services-image {
+  background-image: url("../img/services1.jpg");
+}
+
+.second-services-image {
+  background-image: url("../img/services2.jpg");
+}
+
+.third-services-image {
+  background-image: url("../img/services3.jpg");
+}
+
+.fourth-services-image {
+  background-image: url("../img/services4.jpg");
+}
+
+.main-services-link {
+  display: inline-block;
+  margin: 0;
+  margin-top: 26px;
+  padding-right: 14px;
+  font-family: 'Muller';
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  background-image: url("../img/arrow_ritght.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.main-services-text {
+  margin: 0;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
