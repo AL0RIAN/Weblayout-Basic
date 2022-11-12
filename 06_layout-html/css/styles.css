@@ -300,4 +300,42 @@ body {
   color: #000000;
 }
 
+/* MAIN-SECTION-ADVANTAGE */
 
+.main-advantages-blocks {
+  /* position: relative; */
+  font-size: 0;
+  padding: 0;
+}
+
+.main-advantages-block {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 22px;
+  margin-bottom: 22px;
+  padding: 116px 42px 32px 45px;
+  width: 189px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.main-advantages-block:nth-child(4n) {
+  margin-right: 0;
+}
+
+.main-advantages-block-img {
+  position: absolute;
+  left: 45px;
+  bottom: 170px;
+  right: 167px;
+  top: 40px;
+}
+
+.main-advantages-block-text {
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
