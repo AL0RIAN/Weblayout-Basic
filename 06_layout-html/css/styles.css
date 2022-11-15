@@ -11,6 +11,7 @@ body {
   margin: 30px auto;
   width: 1170px;
   height: 154px;
+  font-size: 0;
 }
 
 .section-titles {
@@ -81,6 +82,7 @@ body {
 }
 
 .header-list {
+  display: inline-block;
   padding: 0;
 }
 
@@ -110,6 +112,8 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #cc9933;
+
+  cursor: pointer;
 }
 
 .navigation-btn:not(:last-child) {
@@ -191,12 +195,9 @@ body {
   background-blend-mode: screen;
 }
 
-.main-special-rooms {
+.main-special-room {
   display: inline-block;
   width: 528px;
-}
-
-.main-special-room {
   padding: 212px 0 40px 45px;
   border-radius: 15px;
 }
@@ -303,7 +304,6 @@ body {
 /* MAIN-SECTION-ADVANTAGE */
 
 .main-advantages-blocks {
-  /* position: relative; */
   font-size: 0;
   padding: 0;
 }
@@ -339,3 +339,141 @@ body {
   line-height: 200%;
   color: #000000;
 }
+
+
+/* MAIN-SECTION-PLACEMENT*/
+.main-placement-list {
+  font-size: 0;
+  padding: 0;
+}
+
+.main-placement-list-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding-top: 217px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+  width: 329px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.main-placement-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.main-placement-list-item:last-child {
+  width: auto;
+  padding-top: 373px;
+  padding-left: 54px;
+  padding-bottom: 27px;
+  padding-right: 54px;
+}
+
+.main-placement-price-container {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.main-placement-list-item-text {
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.main-placement-price-container .main-placement-list-item-text:last-of-type {
+  color:#000000
+}
+
+.main-placement-list-item-stars {
+  display: inline-block;
+  margin-left: 52px;
+  margin-top: 35px;
+}
+
+.main-placement-list-item-star:not(:last-child) {
+  margin-right: 6px;
+}
+
+
+.main-placement-list-item-price {
+  margin-left: 4px;
+  margin-left: 4px;
+  font-family: 'Muller';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-placement-list-item-name {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.main-placement-button {
+  margin-top: 20px;
+  display: block;
+}
+
+.first-placement-picture {
+  background-image: url("../img/placement_1.jpg");
+}
+
+.second-placement-picture {
+  background-image: url("../img/placement_2.jpg");
+}
+
+.third-placement-picture {
+  background-image: url("../img/placement_3.jpg");
+}
+
+.fourth-placement-picture {
+  background-image: url("../img/placement_4.jpg");
+}
+
+.fifth-placement-picture {
+  background-image: url("../img/placement_5.jpg");
+}
+
+.sixth-placement-picture {
+  background-image: url("../img/placement_6.jpg");
+}
+
+.seventh-placement-picture {
+  background-image: url("../img/placement_7.jpg");
+}
+
+.eighth-placement-picture {
+  background-image: url("../img/placement_8.jpg");
+}
+
+.main-placement-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  padding-right: 14px;
+  font-family: 'Muller';
+  text-decoration: none;
+  color: #fff;
+  background-image: url("../img/arrow_right_white.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.ninth-placement-picture {
+  background-image: url("../img/placement_9.jpg");
+}
+
