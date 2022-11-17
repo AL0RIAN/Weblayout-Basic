@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff2");
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.container {
+  margin: 30px auto;
+  width: 1170px;
+  height: 154px;
+  font-size: 0;
+}
+
+.section-titles {
+  margin: 0 0 20px 40px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+/* HEADER */
+
+/* .header {
+} */
+
+.header-logo {
+  vertical-align: top;
+  display: inline-block;
+  width: 261px;
+  height: 54px;
+  border-radius: 15px;
+  background-color: #f0bf5f;
+  background-image: url("../img/lagoona_logo_sun.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header-logo-name {
+  padding: 7px 99px 7.5px 23px;
+}
+
+.header-link {
+  font-family: "Muller";
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.header-contacts-text {
+  display: inline-block;
+  margin: 17px 0px 0px 34px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.header-office-text {
+  display: inline-block;
+  margin: 20px 0 0 542px;
+  padding-left: 28px;
+  font-weight: 400;
+  color: #CC9933;
+  background-image: url("../img/lagoona_to_office.svg");
+  background-repeat: no-repeat;
+}
+
+.header-navigation {
+  padding-left: 45px;
+  margin-top: 30px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: 0;
+  background-color: #fff;
+}
+
+.header-list {
+  display: inline-block;
+  padding: 0;
+}
+
+.header-list-item {
+  display: inline-block;
+  margin: 27px 45px 27px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.header-list-item:last-of-type {
+  margin-right: 114px;
+}
+
+.btn {
+  padding: 13px 20px;
+  border-radius: 10px;
+  border: 1px solid #cc9933;
+  background-color: #fff;
+
+  font-family: "Muller";
+  font-size: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
+
+  cursor: pointer;
+}
+
+.navigation-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* MAIN */
+
+.main .container {
+  block-size: auto;
+  margin-top: 70px;
+}
+
+/* MAIN-SECTION-SPECIAL */
+
+.special {
+  block-size: auto;
+}
+
+.main-special-offers {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  width: 573px;
+}
+
+.main-special-offer {
+  margin-bottom: 24px;
+  padding: 40px 0 40px 45px;
+  width: 528px;
+  border-radius: 15px;
+}
+
+.main-special-offer:last-child {
+  margin-bottom: 0;
+}
+
+.main-special-offer-text {
+  margin: 0;
+  font-family: 'Muller';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.main-special-offer-price {
+  display: block;
+  margin-top: 15px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.main-special-link {
+  display: inline-block;
+  margin-top: 47px;
+  padding-right: 14px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #F0BF5F;
+  background-image: url("../img/arrow_ritght.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.first-special-img {
+  background-image: url("../img/special1.jpg"), url("../img/darken.png");
+  background-blend-mode: screen;
+}
+
+.second-special-img {
+  background-image: url("../img/special3.jpg"), url("../img/darken.png");
+  background-blend-mode: screen;
+}
+
+.main-special-room {
+  display: inline-block;
+  width: 528px;
+  padding: 212px 0 40px 45px;
+  border-radius: 15px;
+}
+
+.main-special-rooms-text {
+  margin: 0 0 15px 0;
+  font-family: 'Muller';
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.main-special-rooms-price {
+  display: block;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.first-special-rooms-img {
+  background-image: url("../img/special2.jpg");
+  background-size: cover;
+}
+
+/* MAIN-SECTION-ABOUT-US */
+
+.main-about-us-text {
+  width: 888px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* MAIN-SECTION-SERVICES */
+
+.main-services-offers {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.main-services-offer {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 165px 126px 35px 45px;
+  width: 402px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.main-services-offer:nth-child(even) {
+  margin-right: 0;
+}
+
+.first-services-image {
+  background-image: url("../img/services1.jpg");
+}
+
+.second-services-image {
+  background-image: url("../img/services2.jpg");
+}
+
+.third-services-image {
+  background-image: url("../img/services3.jpg");
+}
+
+.fourth-services-image {
+  background-image: url("../img/services4.jpg");
+}
+
+.main-services-link {
+  display: inline-block;
+  margin: 0;
+  margin-top: 26px;
+  padding-right: 14px;
+  font-family: 'Muller';
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  background-image: url("../img/arrow_ritght.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.main-services-text {
+  margin: 0;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+/* MAIN-SECTION-ADVANTAGE */
+
+.main-advantages-blocks {
+  font-size: 0;
+  padding: 0;
+}
+
+.main-advantages-block {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 22px;
+  margin-bottom: 22px;
+  padding: 116px 42px 32px 45px;
+  width: 189px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.main-advantages-block:nth-child(4n) {
+  margin-right: 0;
+}
+
+.main-advantages-block-img {
+  position: absolute;
+  left: 45px;
+  bottom: 170px;
+  right: 167px;
+  top: 40px;
+}
+
+.main-advantages-block-text {
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/* MAIN-SECTION-PLACEMENT*/
+.main-placement-list {
+  font-size: 0;
+  padding: 0;
+}
+
+.main-placement-list-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding-top: 217px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+  width: 329px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.main-placement-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.main-placement-list-item:last-child {
+  width: auto;
+  padding-top: 373px;
+  padding-left: 54px;
+  padding-bottom: 27px;
+  padding-right: 54px;
+}
+
+.main-placement-price-container {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.main-placement-list-item-text {
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.main-placement-price-container .main-placement-list-item-text:last-of-type {
+  color:#000000
+}
+
+.main-placement-list-item-stars {
+  display: inline-block;
+  margin-left: 52px;
+  margin-top: 35px;
+}
+
+.main-placement-list-item-star:not(:last-child) {
+  margin-right: 6px;
+}
+
+
+.main-placement-list-item-price {
+  margin-left: 4px;
+  margin-left: 4px;
+  font-family: 'Muller';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-placement-list-item-name {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.main-placement-button {
+  margin-top: 20px;
+  display: block;
+}
+
+.first-placement-picture {
+  background-image: url("../img/placement_1.jpg");
+}
+
+.second-placement-picture {
+  background-image: url("../img/placement_2.jpg");
+}
+
+.third-placement-picture {
+  background-image: url("../img/placement_3.jpg");
+}
+
+.fourth-placement-picture {
+  background-image: url("../img/placement_4.jpg");
+}
+
+.fifth-placement-picture {
+  background-image: url("../img/placement_5.jpg");
+}
+
+.sixth-placement-picture {
+  background-image: url("../img/placement_6.jpg");
+}
+
+.seventh-placement-picture {
+  background-image: url("../img/placement_7.jpg");
+}
+
+.eighth-placement-picture {
+  background-image: url("../img/placement_8.jpg");
+}
+
+.main-placement-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  padding-right: 14px;
+  font-family: 'Muller';
+  text-decoration: none;
+  color: #fff;
+  background-image: url("../img/arrow_right_white.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.ninth-placement-picture {
+  background-image: url("../img/placement_9.jpg");
+}
+
