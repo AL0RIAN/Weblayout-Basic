@@ -10,24 +10,23 @@
 </head>
 
 <body>
+  <div class="container">
 
-  <header class="header">
-    <div class="container">
+    <header class="header">
       <a href="#" class="header-logo">
-        <div class="header-logo">
-          <img src="img/lagoona_logo.svg" class="header-logo-name" alt="Lagoona">
-        </div>
+        <img src="img/lagoona_logo.svg" class="header-logo-name" alt="Lagoona">
       </a>
 
-      <a href="tel:+74953225448" class="header-link">
-        <span class="header-contacts-text">+7&nbsp;495 322-54-48</span>
+      <a href="tel:+74953225448" class="header-link header-contacts-text">
+        +7&nbsp;495 322-54-48
       </a>
-      <a href="#" class="header-link">
-        <span class="header-office-text">Личный кабинет</span>
+
+      <a href="#" class="header-link header-office-text">
+        Личный кабинет
       </a>
 
       <nav class="header-navigation">
-        <ul class="header-list" style="list-style: none">
+        <ul class="header-list">
           <li class="header-list-item">
             <a href="#something-about-us" class="header-link">
               О нас
@@ -59,40 +58,55 @@
             </a>
           </li>
         </ul>
-        <button class="btn navigation-btn">Хочу тур</button>
-        <button class="btn navigation-btn">Обратный звонок</button>
+        <div class="header-navigation-btns">
+          <button class="btn navigation-btn">Хочу тур</button>
+          <button class="btn navigation-btn">Обратный звонок</button>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <section class="special">
-      <div class="container">
+    <main class="main">
+      <section class="special">
         <h2 class="section-titles">
           Спецпредложения
         </h2>
 
-        <div class="main-special-offers">
-          <article class="main-special-offer first-special-img">
-            <h3 class="main-special-offer-text">
-              Мальдивские<br>острова
-            </h3>
-            <span class="main-special-offer-price">
-              от&nbsp;55&nbsp;000&nbsp;
-            </span>
+        <div class="main-special-block">
+          <div class="main-special-offers">
+            <article class="main-special-offer first-special-img">
+              <h3 class="main-special-offer-text">
+                Мальдивские<br>острова
+              </h3>
+              <p class="main-special-offer-price">
+                от&nbsp;55&nbsp;000&nbsp;
+              </p>
 
-            <a href="#" class="main-special-link">
-              Подробнее
-            </a>
-          </article>
+              <a href="#" class="main-special-link">
+                Подробнее
+              </a>
+            </article>
 
-          <article class="main-special-offer second-special-img">
-            <h3 class="main-special-offer-text">
-              Горящий<br>тур на&nbsp;остров Крит
+            <article class="main-special-offer second-special-img">
+              <h3 class="main-special-offer-text">
+                Горящий<br>тур на&nbsp;остров Крит
+              </h3>
+              <p class="main-special-offer-price">
+                от&nbsp;30&nbsp;000&nbsp;
+              </p>
+
+              <a href="#" class="main-special-link">
+                Подробнее
+              </a>
+            </article>
+          </div>
+
+          <article class="main-special-room first-special-rooms-img">
+            <h3 class="main-special-rooms-text">
+              Номера<br>категории<br>люкс
             </h3>
-            <span class="main-special-offer-price">
-              от&nbsp;30&nbsp;000&nbsp;
-            </span>
+            <p class="main-special-rooms-price">
+              от&nbsp;5&nbsp;000&nbsp;
+            </p>
 
             <a href="#" class="main-special-link">
               Подробнее
@@ -100,23 +114,8 @@
           </article>
         </div>
 
-        <article class="main-special-room first-special-rooms-img">
-          <h3 class="main-special-rooms-text">
-            Номера<br>категории<br>люкс
-          </h3>
-          <span class="main-special-rooms-price">
-            от&nbsp;5&nbsp;000&nbsp;
-          </span>
-
-          <a href="#" class="main-special-link">
-            Подробнее
-          </a>
-        </article>
-
-      </div>
-    </section>
-    <section id="something-about-us" class="something-about-us">
-      <div class="container">
+      </section>
+      <section id="something-about-us" class="something-about-us">
         <h2 class="section-titles">
           О нас
         </h2>
@@ -129,64 +128,68 @@
           сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
           и&nbsp;административных условий.
         </p>
-      </div>
-    </section>
-    <section id="services" class="services">
-      <div class="container">
+      </section>
+      <section id="services" class="services">
         <h2 class="section-titles">
           Услуги
         </h2>
-        <div class="main-services-offers">
-          <article class="main-services-offer first-services-image">
-            <h3>
-              <a href="#" class="main-services-link">
-                Эксклюзивное обсжлуживание
-              </a>
-            </h3>
-            <p class="main-services-text">
-              Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
-            </p>
-          </article>
-          <article class="main-services-offer second-services-image">
-            <h3>
-              <a href="#" class="main-services-link">
-                Аренда банкетных залов
-              </a>
-            </h3>
-            <p class="main-services-text">
-              Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-            </p>
-          </article>
-          <article class="main-services-offer third-services-image">
-            <h3>
-              <a href="#" class="main-services-link">
-                Сауны, бассейны, бани, фитнес-залы
-              </a>
-            </h3>
-            <p class="main-services-text">
-              Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
-            </p>
-          </article>
-          <article class="main-services-offer fourth-services-image">
-            <h3>
-              <a href="#" class="main-services-link">
-                Охраняемые автомобильные стоянки
-              </a>
-            </h3>
-            <p class="main-services-text">
-              Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="advantages" class="advantages">
-      <div class="container">
+        <ul class="main-services-offers">
+          <li class="main-services-offers-items">
+            <article class="main-services-offer first-services-image">
+              <h3>
+                <a href="#" class="main-services-link">
+                  Эксклюзивное обсжлуживание
+                </a>
+              </h3>
+              <p class="main-services-text">
+                Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
+              </p>
+            </article>
+          </li>
+          <li class="main-services-offers-items">
+            <article class="main-services-offer second-services-image">
+              <h3>
+                <a href="#" class="main-services-link">
+                  Аренда банкетных залов
+                </a>
+              </h3>
+              <p class="main-services-text">
+                Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+              </p>
+            </article>
+          </li>
+          <li class="main-services-offers-items">
+            <article class="main-services-offer third-services-image">
+              <h3>
+                <a href="#" class="main-services-link">
+                  Сауны, бассейны, бани, фитнес-залы
+                </a>
+              </h3>
+              <p class="main-services-text">
+                Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+              </p>
+            </article>
+          </li>
+          <li class="main-services-offers-items">
+            <article class="main-services-offer fourth-services-image">
+              <h3>
+                <a href="#" class="main-services-link">
+                  Охраняемые автомобильные стоянки
+                </a>
+              </h3>
+              <p class="main-services-text">
+                Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="advantages" class="advantages">
         <h2 class="section-titles">
           Преимущества
         </h2>
 
-        <ul class="main-advantages-blocks" style="list-style: none;">
+        <ul class="main-advantages-blocks">
           <li class="main-advantages-block">
             <div class="main-advantages-block-img">
               <img src="img/bath.svg" alt="">
@@ -253,260 +256,317 @@
             </p>
           </li>
         </ul>
-      </div>
-    </section>
-    <section id="placement" class="placement">
-      <div class="container">
+      </section>
+      <section id="placement" class="placement">
         <h2 class="section-titles">
           Размещение
         </h2>
 
-        <ul class="main-placement-list" style="list-style-type: none">
-          <li class="main-placement-list-item first-placement-picture">
-            <div class="main-placement-price-container">
-              <span class="main-placement-list-item-text">
-                от
-              </span>
-              <span class="main-placement-list-item-price">
-                4 698
-              </span>
-              <span class="main-placement-list-item-text">
-                / ночь
-              </span>
+        <ul class="main-placement-list">
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_1.jpg" alt="">
+            <div class="main-placement-container">
+              <div class="main-placement-price-container">
+                <p class="main-placement-list-price-paragraph">
+                  <span class="main-placement-list-item-text">
+                    от
+                  </span>
+                  <span class="main-placement-list-item-price">
+                    4 698
+                  </span>
+                  <span class="main-placement-list-item-text">
+                    / ночь
+                  </span>
+                </p>
+
+                <div class="main-placement-list-item-stars">
+                  <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
+                  <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+                </div>
+              </div>
+
+              <h3 class="main-placement-list-item-name">
+                Lagoona española
+              </h3>
+              <p class="main-placement-list-item-text">
+                Барселона, Испания
+              </p>
+              <button class="btn main-placement-button">Номера</button>
             </div>
-            <div class="main-placement-list-item-stars">
-              <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
-              <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+          </li>
+
+          <li class="main-placement-list-item">
+            <article>
+              <img class="main-placement-img" src="img/placement_2.jpg" alt="">
+              <div class="main-placement-container">
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      5 148
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+                <h3 class="main-placement-list-item-name">
+                  Lagoona son típicas
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </div>
+            </article>
+          </li>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_3.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 254
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona de la guerra
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
             </div>
-            <span class="main-placement-list-item-name">
-              Lagoona española
-            </span>
-            <span class="main-placement-list-item-text">
-              Барселона, Испания
-            </span>
-            <button class="btn main-placement-button">Номера</button>
           </li>
-          <li class="main-placement-list-item second-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  5 148
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona son típicas
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_4.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 320
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona mentira piadosa
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
+            </div>
           </li>
-          <li class="main-placement-list-item third-placement-picture ">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 254
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona de la guerra
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_5.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 457
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona empujar la creatividad
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
+            </div>
           </li>
-          <li class="main-placement-list-item fourth-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 320
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona mentira piadosa
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_6.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 320
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona el retorno
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
+            </div>
           </li>
-          <li class="main-placement-list-item fifth-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 457
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona empujar la creatividad
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_7.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 505
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona mentira piadosa
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
+            </div>
           </li>
-          <li class="main-placement-list-item sixth-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 320
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona el retorno
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
+
+          <li class="main-placement-list-item">
+            <img class="main-placement-img" src="img/placement_8.jpg" alt="">
+            <div class="main-placement-container">
+              <article>
+                <div class="main-placement-price-container">
+                  <p class="main-placement-list-price-paragraph">
+                    <span class="main-placement-list-item-text">
+                      от
+                    </span>
+                    <span class="main-placement-list-item-price">
+                      6 824
+                    </span>
+                    <span class="main-placement-list-item-text">
+                      / ночь
+                    </span>
+                  </p>
+
+                  <div class="main-placement-list-item-stars">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
+                    <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
+                  </div>
+                </div>
+
+                <h3 class="main-placement-list-item-name">
+                  Lagoona suerte siguió siempre
+                </h3>
+                <p class="main-placement-list-item-text">
+                  Барселона, Испания
+                </p>
+                <button class="btn main-placement-button">Номера</button>
+              </article>
+            </div>
           </li>
-          <li class="main-placement-list-item seventh-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 505
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 5 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona mentira piadosa
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
-          </li>
-          <li class="main-placement-list-item eighth-placement-picture">
-            <article>
-              <div class="main-placement-price-container">
-                <span class="main-placement-list-item-text">
-                  от
-                </span>
-                <span class="main-placement-list-item-price">
-                  6 824
-                </span>
-                <span class="main-placement-list-item-text">
-                  / ночь
-                </span>
-              </div>
-              <div class="main-placement-list-item-stars">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="Рейтинг фильма 4 из 5">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/full_star.svg" class="main-placement-list-item-star" alt="">
-                <img src="img/empty_star.svg" class="main-placement-list-item-star" alt="">
-              </div>
-              <span class="main-placement-list-item-name">
-                Lagoona suerte siguió siempre
-              </span>
-              <span class="main-placement-list-item-text">
-                Барселона, Испания
-              </span>
-              <button class="btn main-placement-button">Номера</button>
-            </article>
-          </li>
+
           <li class="main-placement-list-item ninth-placement-picture">
-            <article>
-              <a href="#" class="main-placement-link">
-                Посмотреть все варианты
-              </a>
-            </article>
+            <a href="#" class="main-placement-link">
+              Посмотреть все варианты
+            </a>
           </li>
         </ul>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="footer">
+    <footer class="footer">
 
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
