@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   font-family: 'Muller';
 }
 
@@ -19,9 +19,14 @@ body {
   font-size: 0;
 }
 
+.sections {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .section-titles {
   font-weight: 400;
-  margin: 70px 0 20px 40px;
+  margin: 0 0 20px 40px;
   font-size: 40px;
   line-height: 40px;
   color: #333333;
@@ -135,10 +140,6 @@ header {
 }
 
 /* MAIN-SECTION-SPECIAL */
-
-.special {
-  block-size: auto;
-}
 
 .main-special-block {
   width: 1170px;
@@ -449,3 +450,114 @@ header {
   background-size: cover;
 }
 
+/* MAIN-SECTION-TOUR*/
+
+.tour-wrapper {
+  padding: 45px 45px 45px 40px;
+  background-color: #e9e9e9;
+  border-radius: 15px;
+}
+
+.form {
+  padding-left: 28px;
+  padding-right: 28px;
+  justify-content: space-between;
+  align-items: center;
+  height: 106px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.form-block {
+  flex-direction: column;
+}
+
+.form-block-text {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+
+.form-select {
+  width: auto;
+  padding-right: 26px;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.form-date {
+  width: auto;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.form-input {
+  width: 120px;
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+
+/* MAIN-SECTION-CONTACTS*/
+
+.contacts-wrapper {
+  padding: 45px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.contacts-left {
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 52px;
+}
+
+.contacts-block {
+  padding-bottom: 23px;
+  justify-content: space-between;
+  width: 375px;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 25px;
+}
+
+.contacts-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.contacts-adress {
+  width: 229px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts-tel-block {
+  width: 229px;
+  flex-direction: column;
+}
+
+.contacts-tel {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+  text-decoration: none;
+}
+
+.contacts-mail-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999;
+}
+
+.contacts-btn {
+  padding: 27px 29px;
+}

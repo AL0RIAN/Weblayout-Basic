@@ -14,19 +14,19 @@
 
     <header class="flex">
 
-    <div class="header-logo-block flex">
-      <a href="#" class="header-logo">
-        <img src="img/lagoona_logo.svg" class="header-logo-name" alt="Lagoona">
-      </a>
+      <div class="header-logo-block flex">
+        <a href="#" class="header-logo">
+          <img src="img/lagoona_logo.svg" class="header-logo-name" alt="Lagoona">
+        </a>
 
-      <a href="tel:+74953225448" class="header-link header-contacts-text">
-        +7&nbsp;495 322-54-48
-      </a>
+        <a href="tel:+74953225448" class="header-link header-contacts-text">
+          +7&nbsp;495 322-54-48
+        </a>
 
-      <a href="#" class="header-link header-office-text">
-        Личный кабинет
-      </a>
-    </div>
+        <a href="#" class="header-link header-office-text">
+          Личный кабинет
+        </a>
+      </div>
 
 
       <nav class="header-navigation flex">
@@ -72,7 +72,7 @@
     </header>
 
     <main class="main">
-      <section class="special">
+      <section class="sections">
         <h2 class="section-titles">
           Спецпредложения
         </h2>
@@ -123,7 +123,7 @@
 
       </section>
 
-      <section id="something-about-us" class="something-about-us">
+      <section id="something-about-us" class="sections">
         <h2 class="section-titles">
           О нас
         </h2>
@@ -138,7 +138,7 @@
         </p>
       </section>
 
-      <section id="services" class="services">
+      <section id="services" class="sections">
         <h2 class="section-titles">
           Услуги
         </h2>
@@ -195,7 +195,7 @@
         </ul>
       </section>
 
-      <section id="advantages" class="advantages">
+      <section id="advantages" class="sections">
         <h2 class="section-titles">
           Преимущества
         </h2>
@@ -269,7 +269,7 @@
         </ul>
       </section>
 
-      <section id="placement" class="placement">
+      <section id="placement" class="sections">
         <h2 class="section-titles">
           Размещение
         </h2>
@@ -573,10 +573,106 @@
           </li>
         </ul>
       </section>
+
+      <section id="tour" class="sections">
+        <div class="tour-wrapper">
+          <h2 class="section-titles">Хочу тур</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+            <div class="form-block flex">
+              <span class="form-block-text">Город вылета</span>
+              <select name="City" class="form-select">
+                <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                <option value="Москва">Москва</option>
+              </select>
+            </div>
+
+            <div class="form-block flex">
+              <span class="form-block-text">Страна</span>
+              <select name="Country" class="form-select">
+                <option value="Австралия" selected>Австралия</option>
+              </select>
+            </div>
+
+            <div class="form-block flex">
+              <span class="form-block-text">Дата прибытия</span>
+              <input class="form-date" type="date" name="Date" required>
+            </div>
+
+            <div class="form-block flex">
+              <span class="form-block-text">Ночей</span>
+              <input class="form-input" type="number" name="Nights" min="1" required>
+            </div>
+
+            <div class="form-block flex">
+              <span class="form-block-text">Туристы</span>
+              <input class="form-input" type="number" name="Tourists" min="1" required>
+            </div>
+
+            <button class="btn">
+              Найти
+            </button>
+
+          </form>
+        </div>
+      </section>
+
+      <section id="contacts" class="sections">
+        <h2 class="section-titles">Контакты</h2>
+        <div class="contacts-wrapper flex">
+          <div class="contacts-left flex">
+
+            <div class="contacts-block flex">
+              <h3 class="contacts-name">
+                Адрес
+              </h3>
+              <p class="contacts-adress">
+                Москва, улица Юности, дом 5&nbsp;строение 4, офис 2
+              </p>
+            </div>
+
+            <div class="contacts-block flex">
+              <h3 class="contacts-name">
+                Телефоны
+              </h3>
+              <div class="contacts-tel-block flex">
+                <a href="tel:+74995356434" class="contacts-tel">+7&nbsp;499&nbsp;535-64-34</a>
+                <a href="tel:+74950050544" class="contacts-tel">+7&nbsp;495&nbsp;005-05-44</a>
+              </div>
+            </div>
+
+            <div class="contacts-block flex">
+              <h3 class="contacts-name">
+                Email
+              </h3>
+              <div class="contacts-tel-block flex">
+                <a href="mailto:lg.oona@mail.ru" class="contacts-tel">lg.oona@mail.ru</a>
+                <p class="contacts-mail-text">по вопросам бронирования</p>
+                <a href="mailto:hotels.ln@mail.ru" class="contacts-tel">hotels.ln@mail.ru</a>
+                <p class="contacts-mail-text">по вопросам сотрудничества</p>
+              </div>
+            </div>
+
+            <div class="contacts-block flex">
+              <span class="contacts-name">
+                График
+              </span>
+              <p class="contacts-adress">
+                Понедельник-пятница, с 10:00&nbsp;до 19:00
+              </p>
+            </div>
+
+          <button class="btn contacts-btn">Построить маршрут</button>
+
+          </div>
+
+          <img src="img/reception.jpg" alt="reception">
+
+        </div>
+
+      </section>
     </main>
 
     <footer class="footer">
-
     </footer>
   </div>
 </body>
