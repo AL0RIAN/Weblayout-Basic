@@ -479,7 +479,8 @@ header {
 }
 
 .form-select {
-  width: auto;
+  box-sizing: content-box;
+  width: 159px;
   padding-right: 26px;
   border: none;
   font-size: 16px;
@@ -526,6 +527,7 @@ header {
 }
 
 .contacts-name {
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -544,6 +546,7 @@ header {
 }
 
 .contacts-tel {
+  width: auto;
   margin: 0;
   font-size: 16px;
   line-height: 150%;
@@ -565,24 +568,21 @@ header {
 /* FOOTER */
 
 .footer {
-  padding: 45px;
   position: relative;
+  padding: 45px;
   background-color: #333;
   border-radius: 15px;
 }
 
 .footer-logo {
-  position: absolute;
-  padding: 0;
-  width: 200px;
-  min-height: 54px;
-  border-radius: 15px;
-  left: 738px;
-  bottom: 0;
+  background-image: url("../img/lagoona_logo_sun_gray.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: 738px;
 }
 
 .footer-left {
-  width: 302px;
+  max-width: 302px;
   flex-direction: column;
   margin-right: 125px;
 }
@@ -606,6 +606,7 @@ header {
 }
 
 .footer-contact {
+  width: fit-content;
   flex-direction: column;
   margin-bottom: 15px;
 }
@@ -618,9 +619,10 @@ header {
 }
 
 .footer-social {
+  padding: 0;
   flex-direction: column;
 }
 
-.footer-social-logo:not(:last-child) {
+.footer-social-item:not(:last-child) {
   margin-bottom: 20px;
 }
