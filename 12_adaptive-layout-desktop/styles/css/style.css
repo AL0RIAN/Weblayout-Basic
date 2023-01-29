@@ -88,3 +88,126 @@ a {
 .section-topic {
   margin: 0;
 }
+
+/* HEADER */
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 14px 75px;
+  background-color: #fff;
+  border-radius: 0 0 32px 32px;
+}
+
+.header__nav {
+  align-items: center;
+}
+
+.nav__list {
+  justify-content: center;
+  list-style: none;
+}
+
+.list__item {
+  position: relative;
+}
+
+.list__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.item__link {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.item__link:focus {
+  outline: 2px solid var(--orange);
+}
+
+.item__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: var(--orange);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.item__link:hover::after {
+  opacity: 1;
+}
+
+.item__link:active:after {
+  background-color: var(--orange2);
+  opacity: 1;
+}
+
+.item__link:active {
+  outline: none;
+  color: var(--orange2);
+}
+
+
+.header__search {
+  height: fit-content;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 0;
+  transition: stroke 0.3s ease-in-out;
+}
+
+
+.search {
+  position: relative;
+  stroke: black;
+  fill: transparent;
+}
+
+.search button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: stroke 0.3s ease-in-out, fill 0.3s ease-in-out, outline 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.search button:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 4px;
+}
+
+rect {
+  fill: black;
+}
+
+.search button:hover {
+  stroke: var(--orange)
+}
+
+.search button:hover rect {
+  fill: var(--orange);
+}
+
+/* .search::after {
+  content: "";
+  position: absolute;
+  outline: none;
+  width: 539px;
+  height: 60px;
+  background-color: red;
+  border-radius: 24px;
+  opacity: 0;
+}
+
+.search:active::after {
+  opacity: 1;
+} */
