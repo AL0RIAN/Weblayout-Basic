@@ -372,3 +372,120 @@ rect {
 .topic-block{
   width: 450px;
 }
+
+/* ABOUT-WORK */
+
+.about-work {
+  margin-top: 100px;
+}
+
+.about-work__steps {
+  margin-top: 50px;
+}
+
+.steps__step {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.steps__step:not(:last-child) {
+  margin-right: 85px;
+}
+
+.steps__step button {
+  border: none;
+  background-color: transparent;
+  transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.steps__step button:focus {
+  outline: 2px solid #FF9900;
+}
+
+.steps__step button:hover {
+  color: var(--orange)
+}
+
+.steps__step button:active {
+  outline: none;
+  color: var(--orange2);
+}
+
+.about-work__article {
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.about-work__article .article__left {
+  width: calc(100% - 142px);
+  margin-right: 142px;
+}
+
+.article__left .section-text  {
+  margin-top: 8px;
+}
+
+.about-work__article .article__right {
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.left__btns {
+  margin-top: 18px;
+}
+
+.left__btns .btn {
+  padding: 20px 38px;
+  margin-right: 32px;
+}
+
+.left__btns .btn:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: var(--orange);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.left__btns .btn:nth-child(1):focus {
+  outline: none;
+  background-color: #FFB84D;
+}
+
+.left__btns .btn:nth-child(1):hover {
+  background-color: #FFB84D;
+}
+
+.left__btns .btn:nth-child(1):active {
+  background-color: var(--orange2);
+}
+
+.left__btns .btn:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.left__btns .btn:nth-child(2):focus {
+  outline: none;
+  color: #fff;
+  border-color: #666;
+  background-color: #666;
+}
+
+.left__btns .btn:nth-child(2):hover {
+  color: #fff;
+  border-color: #666;
+  background-color: #666;
+}
+
+.left__btns .btn:nth-child(2):active {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}
