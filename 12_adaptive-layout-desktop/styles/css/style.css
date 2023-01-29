@@ -211,3 +211,75 @@ rect {
 .search:active::after {
   opacity: 1;
 } */
+
+/* HERO */
+
+.hero {
+  position: relative;
+  max-width: 100%;
+  margin-top: 50px;
+  padding: 100px 80px;
+  border-radius: 32px;
+  background-image: url("../img/hero_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  max-width: 837px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: #fff;
+}
+
+.hero__text {
+  max-width: 790px;
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.hero__btn {
+  margin-top: 90px;
+  padding: 25px 39px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: #fff;
+  background: var(--orange);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero__btn:focus {
+  outline: none;
+  background-color: #FFB84D;
+}
+
+
+.hero__btn:hover {
+  background-color: #FFB84D;
+}
+
+.hero__btn:active {
+  background-color: var(--orange2);
+}
+
+.hero__list {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  list-style: none;
+}
+
+.hero-marker {
+  cursor: pointer;
+}
+
+.hero-marker:not(:last-child) {
+  margin-right: 20px;
+}
