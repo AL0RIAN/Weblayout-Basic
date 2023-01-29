@@ -283,3 +283,92 @@ rect {
 .hero-marker:not(:last-child) {
   margin-right: 20px;
 }
+
+/* ABOUT-US */
+
+.about-us {
+  margin-top: 50px;
+}
+
+.about-us__text {
+  margin-top: 20px;
+  max-width: 1235px;
+}
+
+.about-us__article {
+  margin-top: 50px;
+}
+
+.about-us__article .article__left {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: calc((100% - 32px) / 2);
+  height: inherit;
+  margin-right: 38px;
+  background-image: url("../img/about-us-left.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.left__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-image: url("../img/about-us-left-gray.png");
+  background-size: cover;
+}
+
+.left__wrapper .section-text {
+  max-width: 433px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-left__btn {
+  height: fit-content;
+  padding: 20px 38px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid var(--orange);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.about-left__btn:focus {
+  outline: none;
+  background-color: var(--orange);
+}
+
+.about-left__btn:hover {
+  background-color: var(--orange);
+}
+
+.about-left__btn:active {
+  background-color: var(--orange2);
+  border-color: var(--orange2);
+}
+
+.article__right {
+  flex-direction: column;
+  width: calc((100% - 32px) / 2);
+}
+
+.right__wrapper {
+  justify-content: space-between ;
+  padding: 65px 60px;
+  margin-right: 50px;
+  border: 1px solid #cacaca;
+  border-radius: 32px;
+}
+
+.right__wrapper:not(:first-child) {
+  margin-top: 32px;
+}
+
+.topic-block{
+  width: 450px;
+}
