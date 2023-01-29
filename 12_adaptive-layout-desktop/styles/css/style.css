@@ -489,3 +489,107 @@ rect {
   border-color: #000;
   background-color: #000;
 }
+
+/* FAQ */
+
+.faq {
+  margin-top: 111px;
+}
+
+.faq__list {
+  margin-top: 32px;
+}
+
+.quests__quest {
+  position: relative;
+  width: 100%;
+  text-align: start;
+  border: none;
+  border-top: 1px solid #cacaca;
+  padding: 39px 0;
+  background-color: transparent;
+  transition: border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.quests__quest:last-child {
+  border-bottom: 1px solid #cacaca;
+}
+
+.quests__quest:focus {
+  outline: none;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.quests__quest svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.quests__quest svg path {
+  fill: black;
+  transition: fill 0.3s ease-in-out;
+}
+
+.quests__quest svg ellipse {
+  fill: #cacaca;
+  transition: fill 0.3s ease-in-out;
+}
+
+.quests__quest:focus svg path {
+  fill: #fff;
+}
+
+.quests__quest:focus svg ellipse {
+  fill: var(--orange);
+}
+
+.quests__quest:hover {
+  outline: none;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.quests__quest:hover svg path {
+  fill: #fff;
+}
+
+.quests__quest:hover svg ellipse {
+  fill: var(--orange);
+}
+
+.quests__quest:active {
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.quests__quest:active svg {
+  transform: rotate(45deg);
+}
+
+.quests__quest:active svg path {
+  fill: black;
+}
+
+.quests__quest:active svg ellipse {
+  fill: #cacaca;
+}
+
+
+.plus {
+  position: absolute;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 31px;
+  left: calc(100% - 50px);
+}
+
+.quest-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
