@@ -10,7 +10,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}   
+}
 
 @font-face {
     font-family: "Montserrat";
@@ -71,7 +71,7 @@ a {
     list-style: none;
 }
 
-.section-title { 
+.section-title {
     margin: 0;
     font-weight: 400;
     font-size: 48px;
@@ -86,6 +86,9 @@ a {
 }
 
 .section-topic {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
     margin: 0;
 }
 
@@ -126,7 +129,7 @@ a {
 
 .list__item:not(:last-child) {
     margin-right: 85px;
-}  
+}
 
 .item__link {
     color: #000;
@@ -138,7 +141,7 @@ a {
 
 .item__link:focus {
     outline: 2px solid var(--orange);
-} 
+}
 
 .item__link::after {
     content: "";
@@ -225,7 +228,7 @@ rect {
 .hero__title {
     max-width: 837px;
     margin: 0;
-    font-weight: 800;   
+    font-weight: 800;
     font-size: 70px;
     line-height: 85px;
     color: #fff;
@@ -267,10 +270,13 @@ rect {
 }
 
 .hero__list {
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    list-style: none;
+  justify-items: center;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  bottom: 30px;
+  list-style: none;
 }
 
 .hero-marker {
@@ -346,7 +352,7 @@ rect {
 
 .about-left__btn:active {
     background-color: var(--orange2);
-    border-color: var(--orange2); 
+    border-color: var(--orange2);
 }
 
 .article__right {
@@ -424,6 +430,10 @@ rect {
 }
 
 .about-work__article .article__right {
+    width: calc(100% - 142px);
+    background-image: url("../img/about-work_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 32px;
     overflow: hidden;
 }
@@ -612,7 +622,7 @@ rect {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 36px;  
+    line-height: 36px;
     color: #cacaca;
 }
 
@@ -686,8 +696,8 @@ rect {
     padding: 14px 0 14px 24px;
     background: #414141;
     border: none;
-    border-radius: 16px;  
-    transition: background-color 0.3s ease-in-out;  
+    border-radius: 16px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .input-form:focus {
@@ -714,8 +724,8 @@ rect {
     padding: 14px 0 14px 24px;
     background: #414141;
     border: none;
-    border-radius: 16px;     
-    transition: background-color 0.3s ease-in-out;  
+    border-radius: 16px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .textarea-form:focus {
@@ -765,6 +775,6 @@ rect {
 .footer .section-text {
     width: 363px;
     color: #cacaca;
-} 
+}
 
 /* КОММИТЫ СДЕЛАТЬ ПО ОЧЕРЕДИ ДЛЯ ХТМЛ, ХЕДЕРА итд */
