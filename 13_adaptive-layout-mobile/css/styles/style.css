@@ -425,11 +425,16 @@ rect {
     margin-right: 142px;
 }
 
-.article__left .section-text  {
+.about-work__article .section-text  {
     margin-top: 8px;
 }
 
+.about-work__article .article__right:nth-child(1) {
+  display: none;
+}
+
 .about-work__article .article__right {
+    display: block;
     width: calc(100% - 142px);
     background-image: url("../img/about-work_1.jpg");
     background-repeat: no-repeat;
@@ -613,6 +618,10 @@ rect {
     width: calc(100% / 3);
 }
 
+footer .f-left:last-child {
+  display: none;
+}
+
 .f-left__f-nav {
     margin-top: 20px;
     margin-bottom: 90px;
@@ -776,5 +785,3 @@ rect {
     width: 363px;
     color: #cacaca;
 }
-
-/* КОММИТЫ СДЕЛАТЬ ПО ОЧЕРЕДИ ДЛЯ ХТМЛ, ХЕДЕРА итд */
