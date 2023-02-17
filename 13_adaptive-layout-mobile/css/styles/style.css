@@ -13,6 +13,15 @@
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Mediu"),
+      url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
     font-weight: 600;
@@ -315,12 +324,16 @@ rect {
     overflow: hidden;
 }
 
-.left__wrapper {
+.about-us .left__wrapper:nth-child(1) {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
     background-image: url("../img/about-us-left-gray.png");
     background-size: cover;
+}
+
+.about-us .left__wrapper:nth-child(2) {
+  display: none;
 }
 
 .left__wrapper .section-text {
@@ -361,11 +374,14 @@ rect {
 }
 
 .right__wrapper {
-    justify-content: space-between ;
     padding: 65px 60px;
     margin-right: 50px;
     border: 1px solid #cacaca;
     border-radius: 32px;
+}
+
+.right__wrapper img {
+  margin-right: 50px;
 }
 
 .right__wrapper:not(:first-child) {
