@@ -1,5 +1,294 @@
-@media (max-height: 2560px) {
+@media (width: 3840px) {
+  .section-title {
+    font-size: 68px;
+    line-height: 79px;
+  }
 
+  /* HEADER */
+
+  .header img {
+    width: 315px;
+    height: 110px;
+  }
+
+  .header__search svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .item__link {
+    font-size: 38px;
+  }
+
+  /* HERO */
+
+  .hero__title {
+    max-width: 2400px;
+    font-size: 90px;
+    line-height: 105px;
+  }
+
+  .hero__text {
+    max-width: 1600px;
+    font-size: 44px;
+    line-height: 49px;;
+  }
+
+  .hero__btn {
+    font-size: 43px;
+    line-height: 48px;
+  }
+
+  .hero-marker img {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+
+  /* ABOUT-US */
+
+  .about-us__text {
+    max-width: 1920px;
+  }
+
+  .section-text {
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+
+  .left__wrapper .section-text {
+    max-width: calc(100% / 2 + 50px);
+  }
+
+  .about-left__btn {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .topic-block {
+    width: 85%;
+  }
+
+  .topic-block .section-topic {
+    margin-bottom: 8px;
+    font-size: 44px;
+    line-height: 49px;
+  }
+
+  /* ABOUT-WORK */
+
+  .steps__step button {
+    font-size: 48px;
+    line-height: 42px;
+  }
+
+  .about-work .section-topic {
+    font-size: 44px;
+    line-height: 49px;
+  }
+
+  .left__btns .btn:nth-child(1) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .left__btns .btn:nth-child(2) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  /* FAQ */
+
+  .quest-text {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .quests__quest svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* FOOTER */
+
+  .footer img {
+    width: 315px;
+    height: 110px;
+  }
+
+  .f-list__flist-item {
+    font-size: 38px;
+    line-height: 56px;
+  }
+
+  .social-logo svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .input-form {
+    font-size: 36px;
+  }
+
+  .textarea-form {
+    font-size: 36px;
+  }
+
+  .forms button {
+    padding: 35px 52px;
+    font-size: 36px;
+  }
+
+  .footer .section-text {
+    width: 75%;
+  }
+}
+
+@media (width: 2560px) {
+    .section-title {
+      font-size: 58px;
+      line-height: 69px;
+    }
+
+    /* HEADER */
+
+    .header img {
+      width: 300px;
+      height: 96px;
+    }
+
+    .header__search svg {
+      width: 34px;
+      height: 34px;
+    }
+
+    .item__link {
+      font-size: 28px;
+    }
+
+    /* HERO */
+
+    .hero__title {
+      max-width: 2400px;
+      font-size: 80px;
+      line-height: 95px;
+    }
+
+    .hero__text {
+      max-width: 1200px;
+      font-size: 34px;
+      line-height: 39px;;
+    }
+
+    .hero__btn {
+      font-size: 33px;
+      line-height: 38px;
+    }
+
+    .hero-marker img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ABOUT-US */
+
+    .about-us__text {
+      max-width: 1800px;
+    }
+
+    .section-text {
+      font-size: 26px;
+      line-height: 42px;
+    }
+
+
+    .left__wrapper .section-text {
+      max-width: calc(100% / 2 + 50px);
+    }
+
+    .about-left__btn {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .topic-block {
+      width: 75%;
+    }
+
+    .topic-block .section-topic {
+      margin-bottom: 8px;
+      font-size: 34px;
+      line-height: 39px;
+    }
+
+    /* ABOUT-WORK */
+
+    .steps__step button {
+      font-size: 28px;
+      line-height: 22px;
+    }
+
+    .about-work .section-topic {
+      font-size: 34px;
+      line-height: 39px;
+    }
+
+    .left__btns .btn:nth-child(1) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .left__btns .btn:nth-child(2) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    /* FAQ */
+
+    .quest-text {
+      font-size: 34px;
+      line-height: 42px;
+    }
+
+    .quests__quest svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* FOOTER */
+
+    .footer img {
+      width: 300px;
+      height: 96px;
+    }
+
+    .f-list__flist-item {
+      font-size: 28px;
+      line-height: 46px;
+    }
+
+    .social-logo svg {
+      width: 70px;
+      height: 70px;
+    }
+
+    .input-form {
+      font-size: 26px;
+    }
+
+    .textarea-form {
+      font-size: 26px;
+    }
+
+    .forms button {
+      padding: 25px 52px;
+      font-size: 26px;
+    }
+
+    .footer .section-text {
+      width: 75%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -602,7 +891,4 @@
       width: 40px;
       height: 40px;
     }
-
-
 }
-
