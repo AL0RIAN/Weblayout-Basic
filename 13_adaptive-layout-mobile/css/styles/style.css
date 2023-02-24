@@ -531,10 +531,11 @@ rect {
 .quests__quest {
     position: relative;
     width: 100%;
+    padding: 39px 0;
+    padding-right: 50px;
     text-align: start;
     border: none;
     border-top: 1px solid #cacaca;
-    padding: 39px 0;
     background-color: transparent;
     transition: border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
 }
