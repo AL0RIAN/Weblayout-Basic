@@ -1,0 +1,71 @@
+:root {
+  --orange: #ff9900;
+  --orange2: #e1670E;
+}
+
+.accordion-container {
+  position: relative;
+}
+
+.accoridon--active .ac-panel {
+  visibility: visible;
+}
+
+.accoridon--active .plus {
+  transform: rotate(45deg);
+}
+
+.ac {
+  position: relative;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+}
+
+.ac:hover {
+  color: var(--orange);
+  border-top: 1px solid #FF9900;
+  border-bottom: 1px solid #FF9900;
+}
+
+.ac .ac-trigger:focus {
+  color: var(--orange);
+}
+
+.ac .ac-trigger::after {
+  display: none;
+}
+
+.ac .ac-trigger {
+  position: static;
+  padding: 0;
+  border: none;
+}
+
+.ac .ac-panel .ac-text {
+  padding: 0;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.ac-panel {
+  overflow: hidden;
+  visibility: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
