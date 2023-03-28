@@ -85,7 +85,7 @@
 }
 
 .choices[data-type*=select-one]::after {
-  content: url("../select_down.svg");
+  content: url("./img/select_down.svg");
   /* height: 0;
   width: 0; */
   /* border-style: solid;
@@ -99,7 +99,7 @@
 }
 
 .choices[data-type*=select-one].is-open::after {
-  content: url("../select_up.svg");
+  content: url("./img/select_up.svg");
   /* border-color: transparent transparent #333; */
   /* margin-top: -7.5px; */
 }

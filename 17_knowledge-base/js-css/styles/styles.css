@@ -1,9 +1,35 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-Regular"),
+    url('fonts/OpenSans-Regular.ttf') format("ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-SemiBold"),
+    url("/fonts/OpenSans-SemiBold.ttf"), format("ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Regular"),
+    url("fonts/Roboto-Regular.ttf"), format("ttf");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
 body {
   background: #424242;
 }
 
 .container {
-  /* z-index: -1; */
   margin: auto;
   width: 100%;
   height: 100%;
@@ -42,8 +68,6 @@ body {
 .categories-titile {
   margin: 0;
   margin-bottom: 20px;
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -54,8 +78,6 @@ body {
   position: relative;
   color: #333;
   cursor: pointer;
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -82,10 +104,8 @@ input[type="checkbox" i]{
   transition: border-color 0.3s ease-in-out;
 }
 
-
 .checkbox + span::before {
-  content: url(check.svg);
-  /* content: "\2713"; */
+  content: url("../img/check.svg");
   position: absolute;
   top: -3px;
   left: 3px;
@@ -111,29 +131,31 @@ input[type="checkbox" i]{
   height: 300px;
 }
 
-/* Task 5 */
+/* Task 6 */
 
 .form {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 410px;
   background-color: #282828;
   border-radius: 10px;
   padding: 40px 30px;
 }
 
-input {
+.form__input {
   margin-bottom: 31px;
   padding: 24px 20px;
   border-radius: 10px;
   border: none;
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  outline: none;
+}
+
+.form__input:last-of-type {
+  margin: 0;
 }
 
 .btn {
@@ -145,42 +167,48 @@ input {
   border-radius: 10px;
   background-color: #FF5C00;
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
 }
 
-.form .just-validate-error-label {
+.form input[data-validate-field=name] + div {
   position: absolute;
+  z-index: 10;
+  top: 24px;
   left: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 14px;
   color: #FF5C00 !important;
 }
 
-.just-validate-error-label:first-of-type {
-  top: 18px;
+.form input[data-validate-field=tel] + div {
+  position: absolute;
+  z-index: 10;
+  top: 124px;
+  left: 50px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00 !important;
 }
 
-.just-validate-error-label:nth-of-type(2) {
-  top: 115px;
+.form input[data-validate-field=mail] + div {
+  position: absolute;
+  z-index: 10;
+  content: 'как вас зовут' !important;
+  top: 224px;
+  left: 50px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00 !important;
 }
 
-.just-validate-error-label:nth-of-type(3) {
-  top: 213px;
-}
-
-.just-validate-error-field {
-  outline: 1px solid #FF5C00;
-}
-
-.just-validate-success-field {
-  outline: none;
+.form .just-validate-error-label {
+  position: absolute;
+  left: 50px;
 }
 
 /* Task 7 */
@@ -189,8 +217,7 @@ input {
   width: 375px;
   background-color: #fff;
   padding: 20px 30px;
-  font-family: 'Open Sans';
-  font-style: normal;
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
@@ -206,12 +233,9 @@ input {
   padding: 7px 15px;
   margin: 0;
   color: #fff;
-  font-family: 'Open Sans';
-  font-style: normal;
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   background-color: #666;
 }
-
-

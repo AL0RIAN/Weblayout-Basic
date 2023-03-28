@@ -166,7 +166,7 @@ function initMap() {
   });
 
   const icon = {
-      url: "marker.svg",
+      url: "js-css/img/marker.svg",
       scaledSize: new google.maps.Size(50, 50), // scaled size
       origin: new google.maps.Point(0,0), // origin
       anchor: new google.maps.Point(0, 0) // anchor

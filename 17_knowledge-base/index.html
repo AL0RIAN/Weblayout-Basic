@@ -4,14 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Practice 17</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="js-css/choices.min.css">
+  <link rel="stylesheet" href="./js-css/styles/styles.css">
+  <link rel="stylesheet" href="js-css/styles/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script type="module" src="./js-css/map.js"></script>
+  <script type="module" src="./js-css/js/map.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <script src="js-css/inputmask.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
@@ -124,11 +122,11 @@
     </div>
 
     <div class="task">
-      <form action="#" class="form" id="form">
-        <input type="text" id="name" placeholder="Имя*" required data-validate-field="name">
-        <input type="tel" id="tel" placeholder="Телефон*" required data-validate-field="tel"
+      <form action="#" id="form" class="form">
+        <input class="form__input" type="name" name="Имя" placeholder="Имя*" class="form__input" data-validate-field="name">
+        <input class="form__input" type="tel" name="tel" placeholder="Телефон*" class="form__input" data-validate-field="tel"
           data-validate-rules="phone">
-        <input type="email" id="email" placeholder="Email*" required data-validate-field="mail">
+        <input class="form__input" type="email" name="email" placeholder="E-mail*" class="form__input" data-validate-field="mail">
         <button class="btn">Заказать</button>
       </form>
     </div>
@@ -152,7 +150,7 @@
     </div>
   </div>
 
-  <script src="js-css/choices.min.js"></script>
+  <script src="js-css/js/choices.min.js"></script>
 
   <script>
     const element = document.querySelector("#meterialSelector");
@@ -168,53 +166,40 @@
     defer>
     </script>
 
+  <script src="./js-css/js/inputmask.min.js"></script>
+  <script src="./js-css/js/just-validate.min.js"></script>
+
   <script>
     var selector = document.querySelector("input[type='tel']");
     var im = new Inputmask("+7(999) 999-99-99")
     im.mask(selector);
 
-    const validation = new JustValidate("#form");
-
-    validation
-      .addField('#name', [
-        {
-          rule: 'minLength',
-          value: 3,
+    new JustValidate('.form', {
+      colorWrong: '#FF5C00',
+      rules: {
+        name: {
+          required: true,
+          minLenggth: 2,
+          maxLength: 10
         },
-        {
-          rule: 'maxLength',
-          value: 30,
+        tel: {
+          required: true,
+          function: telValidate,
         },
-        {
-          rule: 'required',
-          errorMessage: 'Вы не ввели имя',
-        }
-      ])
-      .addField('#email', [
-        {
-          rule: 'required',
-          errorMessage: 'Вы не ввели e-mail',
+        mail: {
+          required: true,
+          email: true,
         },
-        {
-          rule: 'email',
-          errorMessage: 'Вы ввели некорректный e-mail',
-
-        },
-      ])
-      .addField("#tel", [
-        {
-          rule: 'required',
-          errorMessage: 'Вы не ввели телефон',
-        },
-        {
-          validator: (value, context) => telValidate() ? true : false,
-          errorMessage: 'Вы ввели некорректный телефон',
-        }
-      ]);
+      },
+      messages: {
+        name: "Как вас зовут?",
+        tel: "Укажите ваш телефон",
+        mail: "Укажите ваш e-mail"
+      }
+    });
 
     function telValidate() {
       const phone = selector.inputmask.unmaskedvalue();
-      console.log(phone.length);
       return Number(phone) && phone.length === 10;
     }
   </script>
