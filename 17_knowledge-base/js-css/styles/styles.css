@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-Regular"),
+    url('fonts/OpenSans-Regular.ttf') format("ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-SemiBold"),
+    url("/fonts/OpenSans-SemiBold.ttf"), format("ttf");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Regular"),
+    url("fonts/Roboto-Regular.ttf"), format("ttf");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+body {
+  background: #424242;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.task {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.task:last-of-type {
+  margin-bottom: 150px;
+}
+
+.btn-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task 1 */
+
+.categories {
+  width: 176px;
+  height: 309px;
+  background-color: #fff;
+  padding: 21px 30px 0 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.categories-titile {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333;
+}
+
+.label__checkbox {
+  position: relative;
+  color: #333;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+input[type="checkbox" i]{
+  visibility: hidden;
+}
+
+.checkbox {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox + span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.checkbox + span::before {
+  content: url("../img/check.svg");
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox:checked + span::before {
+  opacity: 1;
+}
+
+.checkbox:checked + span {
+  border-color: #CCB26E;
+}
+
+/* Task 2 */
+
+.materials {
+  z-index: 1;
+}
+
+.task:nth-child(2) {
+  height: 300px;
+}
+
+/* Task 6 */
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #282828;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.form__input {
+  margin-bottom: 31px;
+  padding: 24px 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+}
+
+.form__input:last-of-type {
+  margin: 0;
+}
+
+.btn {
+  margin-top: 32px;
+  color: #fff;
+  border: 0;
+  width: 50%;
+  padding: 19px 53px;
+  border-radius: 10px;
+  background-color: #FF5C00;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.form input[data-validate-field=name] + div {
+  position: absolute;
+  z-index: 10;
+  top: 24px;
+  left: 50px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00 !important;
+}
+
+.form input[data-validate-field=tel] + div {
+  position: absolute;
+  z-index: 10;
+  top: 124px;
+  left: 50px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00 !important;
+}
+
+.form input[data-validate-field=mail] + div {
+  position: absolute;
+  z-index: 10;
+  content: 'как вас зовут' !important;
+  top: 224px;
+  left: 50px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF5C00 !important;
+}
+
+.form .just-validate-error-label {
+  position: absolute;
+  left: 50px;
+}
+
+/* Task 7 */
+
+.tip {
+  width: 375px;
+  background-color: #fff;
+  padding: 20px 30px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333;
+}
+
+.tip__tip-block {
+  position: relative;
+  display: inline-block;
+}
+
+.tippy-box[data-theme~='gray'] {
+  padding: 7px 15px;
+  margin: 0;
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #666;
+}
