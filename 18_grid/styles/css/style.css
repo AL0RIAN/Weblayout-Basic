@@ -26,6 +26,10 @@
   --skillboxColor: #3f2aff;
 }
 
+.container {
+  max-width: 1440px;
+}
+
 .section-title {
   margin: 0;
   font-family: 'Roboto';
@@ -109,10 +113,10 @@
 }
 
 .hero__left-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* width: 50%; */
 }
 
 .hero__left-block .left-block__text {
@@ -216,9 +220,9 @@
 }
 
 .teachers__list .list__item {
-  display: flex;
-  flex-direction: column;
-  width: 255px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 255px; */
 }
 
 .item__teacher-img {
@@ -271,19 +275,19 @@
 }
 
 .courses__articles {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .courses .articles__article {
   position: relative;
-  width: calc(50% - 15px);
+  /* width: calc(50% - 15px); */
   margin-top: 30px;
 }
 
-.courses .articles__article:nth-child(2n) {
+/* .courses .articles__article:nth-child(2n) {
   margin-left: 30px;
-}
+} */
 
 .courses .article__img {
   position: relative;
@@ -331,7 +335,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 240px;
+  height: 300px;
   padding: 30px;
   background-color: #edf0f9;
   border-radius: 0px 0px 20px 20px;

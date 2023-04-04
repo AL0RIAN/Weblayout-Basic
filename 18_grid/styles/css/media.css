@@ -111,7 +111,7 @@
   }
 
   .courses .article__info {
-    height: 316px;
+    height: 376px;
   }
 }
 
@@ -210,8 +210,8 @@
   }
 
   .courses .article__info {
-    align-items: center;
-    height: 413px;
+    /* align-items: center; */
+    min-height: 518px;
   }
 
   .courses .section-text {
@@ -317,12 +317,32 @@
     padding: 50px 15px;
   }
 
+  .teachers .col-sm-6 {
+    padding-left: 0;
+  }
+
   .section-title {
     font-size: 20px;
   }
 
   .teachers__list .list__item {
     width: 289px;
+  }
+
+  .teacher-img-first {
+    background-image: url("../img/teachers/teachers_1_4.png");
+  }
+
+  .teacher-img-second {
+    background-image: url("../img/teachers/teachers_2_4.png");
+  }
+
+  .teacher-img-third {
+    background-image: url("../img/teachers/teachers_3_4.png");
+  }
+
+  .teacher-img-fourth {
+    background-image: url("../img/teachers/teachers_4_4.png");
   }
 
   /* COURSES */
